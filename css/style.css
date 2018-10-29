@@ -1,0 +1,126 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    font: normal 16px/1.5 'Noto Sans', sans-serif;
+}
+
+/* Link style */
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #E4CB94;
+}
+
+/* Styles for header's child elements */
+.header {
+    display: block;
+    width: 100%;
+    height: 90vh;
+
+    background: url("../img/cover2.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+    .menu {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        margin: 0 auto;
+        padding: 1rem 1rem;
+
+        max-width: 75rem;
+        height: 4rem;
+        background-color: #ffffff;
+    }
+
+        .menu__logo {
+            display: block;
+            width: 2rem;
+            height: auto;
+        }
+
+        .menu__items {
+            display: flex;
+            width: 30rem;
+            justify-content: space-between;
+        }
+
+        .menu__button {
+            display: block;
+            width: 10rem;
+            text-align: right;
+        }
+            .menu__button-login {
+                color: #E4CB94;
+                font-weight: 700;
+                text-decoration: none;
+            }
+
+    .title {
+        display: block;
+        margin: 0 auto;
+        max-width: 75rem;
+        padding-top: 15vh;
+    }
+        .title__main {
+            font-size: 10rem;
+            font-weight: 700;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .title__description {
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-align: center;
+            color: #ffffff;
+        }
+
+    .info {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        max-width: 75rem;
+        margin: 0 auto;
+
+        padding-top: 25vh;
+        }
+
+        .info__button {
+            background-color: #E4CB94;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 700;
+
+            padding: 1rem 4rem;
+
+            cursor: pointer;
+        }
+
+        .info__details {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+            width: 20rem;
+            padding: 1rem 0 1rem 4rem;
+        }
+
+            .info__details-item {
+                font-weight: 700;
+                color: #ffffff;
+            }
+
+            .info__details-subtitle {
+                font-size: 0.75rem;
+                font-weight: 400;
+            }
+
+
