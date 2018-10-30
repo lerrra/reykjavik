@@ -18,14 +18,15 @@ a:hover {
 /* Styles for header's child elements */
 .header {
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
     justify-content: space-between;
 
     width: 100%;
-    height: 90vh;
+    min-height: 90vh;
 
     background: url("../img/cover.jpg") no-repeat center bottom;
     background-size: cover;
+
 }
 
     .menu {
@@ -36,10 +37,18 @@ a:hover {
         margin: 0 auto;
         padding: 1rem 1rem;
 
-        width: 75rem;
+        max-width: 75rem;
+        width: 100%;
         height: 4rem;
         background-color: #ffffff;
     }
+
+        .menu__inner {
+            display: none;
+            flex: 1;
+        }
+
+
 
         .menu__logo {
             display: flex;
@@ -49,6 +58,12 @@ a:hover {
             .menu__logo-img {
                 width: 2rem;
                 height: auto;
+            }
+            .menu__logo-text {
+                font-size: 1.2rem;
+                font-weight: 700;
+                margin-left: 0.5rem;
+
             }
 
         .menu__items {
@@ -67,6 +82,40 @@ a:hover {
                 font-weight: 700;
                 text-decoration: none;
             }
+
+                @media screen and (max-width: 1023px) {
+                    .menu__logo-img {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+
+                    .menu__logo-text {
+                        font-size: 1rem;
+                    }
+
+                    .menu__items {
+                        font-size: 0.875rem;
+                    }
+
+                    .menu__button-login {
+                        font-size: 0.875rem;
+                    }
+                }
+
+                @media screen and (max-width: 767px){
+                    .menu__inner {
+                        display: block;
+                    }
+
+                    .menu__logo {
+                        justify-content: center;
+                    }
+                    .menu__items {
+                        display: none;
+                    }
+
+                }
+
 
     .title {
         display: block;
@@ -88,12 +137,37 @@ a:hover {
             color: #ffffff;
         }
 
+            @media screen and (max-width: 1023px) {
+                .title__main {
+                    font-size: 6rem;
+                }
+                .title__description {
+                    font-size: 1.2rem;
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                .title__main {
+                    font-size: 4.5rem;
+                }
+                .title__description {
+                    font-size: 1rem;
+                }
+            }
+
+            @media screen and (max-width: 479px){
+                .title__main {
+                    font-size: 3rem;
+                }
+            }
+
     .info {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap-reverse;
         justify-content: space-between;
 
-        width: 75rem;
+        max-width: 75rem;
+        width: 100%;
         margin: 0 auto;
 
         padding-top: 25vh;
@@ -117,8 +191,10 @@ a:hover {
             flex-flow: row nowrap;
             justify-content: space-between;
 
-            width: 20rem;
-            padding: 1rem 0 1rem 4rem;
+            max-width: 18rem;
+            width: 100%;
+
+            padding: 1rem 0;
         }
 
             .info__details-item {
@@ -130,5 +206,35 @@ a:hover {
                 font-size: 0.75rem;
                 font-weight: 400;
             }
+
+                @media screen and (max-width: 1023px){
+                    .info__button {
+                        padding: 0.5rem 3rem;
+                    }
+                    .info__details {
+                        padding: 0.5rem;
+                    }
+                }
+
+                @media screen and (max-width: 768px){
+                    .info__button {
+                        font-size: 0.875rem;
+                    }
+                    .info__details-subtitle {
+                        font-size: 0.5rem;
+                    }
+                    .info__details-item {
+                        font-size: 0.875rem;
+                    }
+                }
+
+                @media screen and (max-width: 500px){
+                    .info__button {
+                        width: 100%;
+                    }
+                    .info__details {
+                        display: none;
+                    }
+                }
 
 
