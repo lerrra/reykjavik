@@ -111,29 +111,39 @@ a:hover {
                         justify-content: center;
                     }
                     .menu__items {
-                        visibility: hidden;
+                        display: none;
                     }
 
                     .menu__items.mobile {
-                        visibility: visible;
-
                         display: flex;
-                        flex-flow: row nowrap;
-                        justify-content: space-between;
+                        flex-flow: row wrap;
 
-                        margin: 0 auto;
-                        padding: 1rem 1rem;
+                        position: absolute;
+                        top: 4rem;
+                        left: 0;
 
-                        max-width: 75rem;
                         width: 100%;
-                        height: 4rem;
+                        min-height: 4rem;
+                        padding: 1rem;
                         background-color: #E4CB94;
 
-                        font-size: 0.875rem;
+                        font-size: 1rem;
                         font-weight: 700;
                     }
+                        .menu__items-item {
+                            color: #ffffff;
+                            margin: 0.5rem;
+                        }
 
                 }
+
+                @media screen and (max-width: 497px) {
+                    .menu__items.mobile {
+                        flex-flow: column;
+                    }
+                }
+
+
 
 
     .title {
