@@ -80,9 +80,10 @@
 <footer></footer>
 <script>
     var hamburger = document.querySelector(".hamburger");
+    var menu__items = document.querySelector(".menu__items");
     hamburger.addEventListener("click", function() {
         hamburger.classList.toggle("is-active");
-        // Do something else, like open/close menu
+        menu__items.classList.toggle("mobile")
     });
 </script>
 </body>
