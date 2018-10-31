@@ -311,6 +311,14 @@ a:hover {
                 margin: 2rem 0;
             }
 
+        .column__arrows {
+            align-self: flex-end;
+        }
+            .column__arrows-arrow {
+                width: 2rem;
+                margin: 0 2rem 0 0.5rem;
+            }
+
                 @media screen and (max-width: 1023px){
                     .article {
                         padding: 4rem 0 0;
@@ -337,10 +345,12 @@ a:hover {
                     .column__text-title {
                         margin: 1rem 0;
                         max-width: 70%;
+                        padding-bottom: 1rem;
                     }
 
                     .column__text-paragraph {
                         max-width: 60%;
+                        padding-bottom: 2rem;
                     }
 
                     .column__image {
@@ -349,6 +359,10 @@ a:hover {
 
                     .column__image-img {
                         max-width: 80%;
+                    }
+
+                    .column__arrows {
+                        display: none;
                     }
                 }
 
@@ -414,6 +428,13 @@ a:hover {
                 }
             }
 
+            @media screen and (max-width: 767px){
+                .headline__title {
+                    font-size: 3rem;
+                }
+
+            }
+
             @media screen and (max-width: 478px){
                 .headline__title {
                     font-size: 2.5rem;
@@ -439,4 +460,61 @@ a:hover {
         background-size: cover;
     }
 
+
+    .gallery {
+        max-width: 75rem;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 0 2rem 8rem;
+    }
+
+        .gallery_card {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+            min-height: 50vh;
+            margin: 0 1rem;
+        }
+
+            .gallery_card.card1 {
+                background: url("../img/card1.jpg") no-repeat center bottom;
+                background-size: cover;
+            }
+
+            .gallery_card.card2 {
+                background: url("../img/card2.jpg") no-repeat center bottom;
+                background-size: cover;
+            }
+
+            .gallery_card.card3 {
+                background: url("../img/card3.jpg") no-repeat center bottom;
+                background-size: cover;
+            }
+
+            .gallery_card.card4 {
+                background: url("../img/card4.jpg") no-repeat center bottom;
+                background-size: cover;
+            }
+
+            .gallery_card-title {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: #ffffff;
+                text-align: center;
+
+                margin: 2rem 1rem;
+            }
+
+            .gallery_card-button {
+                font-size: 1rem;
+                font-weight: 700;
+                color: #ffffff;
+                background-color: #E4CB94;
+                padding: 0.5rem 4rem;
+                margin: 0 2rem 2rem;
+            }
 
