@@ -269,4 +269,174 @@ a:hover {
                     }
                 }
 
+.article {
+    display: block;
+    margin: 0 auto;
+    max-width: 75rem;
+    width: 100%;
+    padding: 8rem 0 0;
+}
+
+    .column {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .column__text {
+            width: 50%;
+            padding: 0 1.5rem 0 2rem;
+        }
+            .column__text-title {
+                font-size: 3rem;
+                font-weight: 600;
+                line-height: 1.1;
+                color: #333333;
+                margin: 2rem 0;
+            }
+            .column__text-paragraph {
+                font-size: 1.125rem;
+                color: darkgray;
+                width: 90%;
+            }
+
+        .column__image {
+            width: 50%;
+            padding: 0 2rem 0 1.5rem;
+        }
+
+            .column__image-img {
+                width: 100%;
+                margin: 2rem 0;
+            }
+
+                @media screen and (max-width: 1023px){
+                    .article {
+                        padding: 4rem 0 0;
+                    }
+
+                    .column__text-title {
+                        font-size: 2.25rem;
+                    }
+
+                    .column__text-paragraph {
+                        font-size: 1rem;
+                    }
+                }
+
+                @media screen and (max-width: 767px){
+                    .column {
+                        flex-flow: row wrap;
+                    }
+
+                    .column__text {
+                        width: 100%;
+                    }
+
+                    .column__text-title {
+                        margin: 1rem 0;
+                        max-width: 70%;
+                    }
+
+                    .column__text-paragraph {
+                        max-width: 60%;
+                    }
+
+                    .column__image {
+                        width: 100%;
+                    }
+
+                    .column__image-img {
+                        max-width: 80%;
+                    }
+                }
+
+                @media screen and (max-width: 478px){
+                    .column__text-title {
+                        font-size: 1.5rem;
+                        line-height: 1.3;
+                    }
+                    .column__text-paragraph {
+                        font-size: 0.875rem;
+                        max-width: 100%;
+                    }
+
+                    .column__image-img {
+                        max-width: 100%;
+                    }
+                }
+
+    .headline {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 2rem;
+    }
+
+        .headline__title {
+            max-width: 100%;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1;
+            color: #333333;
+            margin: 1rem 0;
+        }
+
+        .headline__paragraph {
+            max-width: 60%;
+            margin: 0 auto;
+            font-size: 1.125rem;
+            color: darkgray;
+        }
+
+        .headline__button {
+            max-width: 100%;
+            margin: 2rem 0;
+
+            text-decoration: none;
+            outline: none;
+            font-weight: 700;
+
+            padding: 1rem 4rem;
+
+            background-color: #E4CB94;
+            color: white;
+        }
+
+            @media screen and (max-width: 1023px) {
+                .headline__title {
+                    font-size: 3.25rem;
+                }
+
+                .headline__paragraph {
+                    font-size: 1rem;
+                }
+            }
+
+            @media screen and (max-width: 478px){
+                .headline__title {
+                    font-size: 2.5rem;
+                }
+
+                .headline__paragraph {
+                    max-width: 100%;
+                    font-size: 0.825rem;
+                }
+            }
+
+.full {
+    display: block;
+    padding-top: 4rem;
+
+}
+    .full__image {
+        display: block;
+        max-width: 100%;
+        min-height: 70vh;
+
+        background: url("../img/img2.jpg") no-repeat bottom center;
+        background-size: cover;
+    }
+
 
