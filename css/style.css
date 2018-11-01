@@ -410,6 +410,7 @@ a:hover {
 
             text-decoration: none;
             outline: none;
+            cursor: pointer;
             font-weight: 700;
 
             padding: 1rem 4rem;
@@ -464,66 +465,108 @@ a:hover {
     .gallery {
         max-width: 75rem;
         margin: 0 auto;
+        padding: 0 2rem 8rem;
+
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        padding: 0 2rem 8rem;
     }
 
-        .gallery_card {
+        .gallery__card {
             display: flex;
             flex-flow: column;
-            justify-content: center;
             align-items: center;
-            width: 25%;
-            min-height: 50vh;
-            margin: 0 1rem;
+            justify-content: center;
+            width: 16rem;
+            height: 22rem;
+
+
+            padding: 1rem;
+            margin: 1rem 0;
         }
 
-            .gallery_card.card1 {
-                background: url("../img/card1.jpg") no-repeat center bottom;
-                background-size: cover;
-            }
+        .gallery__card.card1 {
+            background: url("../img/card1.png") no-repeat bottom center;
+            background-size: cover;
+        }
 
-            .gallery_card.card2 {
-                background: url("../img/card2.jpg") no-repeat center bottom;
-                background-size: cover;
-            }
+        .gallery__card.card2 {
+            background: url("../img/card2.png") no-repeat bottom center;
+            background-size: cover;
+        }
+        .gallery__card.card3 {
+            background: url("../img/card3.png") no-repeat bottom center;
+            background-size: cover;
+        }
+        .gallery__card.card4 {
+            background: url("../img/card4.png") no-repeat bottom center;
+            background-size: cover;
+        }
 
-            .gallery_card.card3 {
-                background: url("../img/card3.jpg") no-repeat center bottom;
-                background-size: cover;
-            }
-
-            .gallery_card.card4 {
-                background: url("../img/card4.jpg") no-repeat center bottom;
-                background-size: cover;
-            }
-
-            .gallery_card-title {
+            .gallery__card-title {
+                align-self: center;
                 font-size: 1.5rem;
                 font-weight: 700;
                 color: #ffffff;
                 text-align: center;
-
-                margin: 2rem 1rem;
+                padding: 1rem;
             }
 
-            .gallery_card-button {
+            .gallery__card-button {
                 opacity: 0;
+
+                background-color: #E4CB94;
+                padding: 0.5rem 4rem;
                 font-size: 1rem;
                 font-weight: 700;
                 color: #ffffff;
-                background-color: #E4CB94;
-                padding: 0.5rem 4rem;
-                margin: 0 2rem 2rem;
+
+                outline: none;
+                cursor: pointer;
             }
 
-            .gallery_card:hover {
-                box-shadow: 0 0.875rem 1.75rem rgba(0,0,0,0.25), 0 0.625rem 0.625rem rgba(0,0,0,0.22);
+            .gallery__card:hover {
+                box-shadow: 0 0.625rem 1.25rem 0 rgba(0, 0, 0, 0.4);
+                margin: 0;
             }
 
-            .gallery_card:hover > .gallery_card-button {
+            .gallery__card:hover > .gallery__card-button {
                 opacity: 1;
             }
+
+                @media screen and (max-width: 1120px){
+                    .gallery__card {
+                        width: 14rem;
+                        height: 19rem;
+
+                    }
+                }
+
+                @media screen and (max-width: 1000px) {
+                    .gallery {
+                        flex-flow: row wrap;
+                    }
+                    .gallery__card {
+                        width: 49%;
+                    }
+
+                    .gallery__card-title {
+                        font-size: 1.375rem;
+                    }
+
+                    .gallery__card-button {
+                        font-size: 0.875rem;
+                        opacity: 1;
+                    }
+
+                }
+
+                @media screen and (max-width: 768px) {
+                    .full {
+                        padding-top: 2rem;
+                    }
+                    .gallery__card {
+                        width: 100%;
+                    }
+                }
 
