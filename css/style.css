@@ -29,7 +29,7 @@ a:hover {
     background-size: cover;
 
 }
-
+    /* Nav bar with mobile burger style */
     .menu {
         display: flex;
         flex-flow: row nowrap;
@@ -145,7 +145,7 @@ a:hover {
 
 
 
-
+    /* Cover title style */
     .title {
         display: block;
         margin: 0 auto;
@@ -450,6 +450,8 @@ a:hover {
 .full {
     display: block;
     padding-top: 4rem;
+    margin: 0 auto;
+    width: 100%;
 
 }
     .full__image {
@@ -495,7 +497,7 @@ a:hover {
             background-size: cover;
         }
         .gallery__card.card3 {
-            background: url("../img/card3.png") no-repeat bottom center;
+            background: url("../img/card3.jpg") no-repeat bottom center;
             background-size: cover;
         }
         .gallery__card.card4 {
@@ -569,4 +571,43 @@ a:hover {
                         width: 100%;
                     }
                 }
+
+.full.new-block {
+    padding-top: 0;
+}
+
+    .column__full {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #efefef;
+    }
+        .column__full-image {
+            width: 50%;
+        }
+            .column__full-image-img {
+                width: 100%;
+            }
+        .column__full-text {
+            width: 50%;
+            padding: 0 4rem;
+        }
+
+            .column__text-paragraph.black {
+                color: #333333;
+                margin-bottom: 2rem;
+            }
+
+        .column__text-button {
+            text-decoration: none;
+            outline: none;
+            cursor: pointer;
+            font-weight: 700;
+
+            padding: 1rem 4rem;
+
+            background-color: #E4CB94;
+            color: white;
+        }
 
