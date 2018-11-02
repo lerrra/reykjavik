@@ -645,12 +645,15 @@ a:hover {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
+
+        max-width: 75rem;
+        margin: 0 auto;
     }
 
         .booking__text {
             position: relative;
             width: 50%;
-            padding: 0 0 2rem;
+            padding: 0 0 0 2rem;
         }
             .booking__text-title {
                 font-size: 3rem;
@@ -669,7 +672,7 @@ a:hover {
         .booking__image {
             position: relative;
             max-width: 70%;
-            padding: 1rem 0;
+            padding: 2rem;
         }
             .booking__image-img {
                 width: 100%;
@@ -688,6 +691,7 @@ a:hover {
             .booking__card-title {
                 font-size: 1.5rem;
                 font-weight: 700;
+                line-height: 1.1;
                 margin: 1rem 0;
             }
 
@@ -736,3 +740,89 @@ a:hover {
                 background-color: #E4CB94;
                 color: white;
             }
+
+                    @media screen and (max-width: 1023px) {
+                        .booking__card {
+                            padding: 2rem;
+                        }
+                            .booking__card-title {
+                                font-size: 1.375rem;
+                            }
+                            .booking__card-address {
+                               margin: 0.5rem 0;
+                            }
+                                .booking__card-address-text {
+                                    font-size: 0.75rem;
+                                }
+                            .booking__card-params {
+                                margin: 1rem 0;
+                            }
+                                .booking__card-params-item-text {
+                                    font-size: 1rem;
+                                }
+                            .booking__card-button {
+                                font-size: 0.875rem;
+                            }
+
+                        .booking__text-title {
+                            font-size: 2.25rem;
+                        }
+                        .booking__text-paragraph {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    @media screen and (max-width: 768px){
+                        .booking {
+                            flex-flow: row wrap;
+                        }
+                        .booking__image {
+                            width: 70%;
+                            padding: 0;
+                            margin: 2rem 2rem 0;
+                        }
+                        .booking__card{
+                            width: 70%;
+                            position: static;
+                            margin: 0 2rem 0 2rem;
+                        }
+
+                    }
+
+                    @media screen and (max-width: 478px) {
+                        .booking__text {
+                            width: 100%;
+                        }
+                            .booking__text-title {
+                                font-size: 1.5rem;
+                                line-height: 1.3;
+                            }
+                            .booking__text-paragraph {
+                                font-size: 0.875rem;
+                                max-width: 100%;
+                                margin-bottom: 1rem;
+                            }
+                        .booking__image {
+                                max-width: 100%;
+                                width: 100%;
+                            }
+
+                        .booking__card {
+                            width: 100%;
+                        }
+                            .booking__card-title {
+                                font-size: 1.2rem;
+                            }
+                            .booking__card-address-icon {
+                                width: 1rem;
+                                height: 1rem;
+                                margin-right: 0.5rem;
+                            }
+
+                            .booking__card-params-item {
+                                min-width: 2rem;
+                            }
+                                .booking__card-params-item-text {
+                                    font-size: 0.875rem;
+                                }
+                    }
