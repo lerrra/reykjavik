@@ -826,3 +826,44 @@ a:hover {
                                     font-size: 0.875rem;
                                 }
                     }
+
+.full.gold {
+    background-color: #E4CB94;
+}
+
+    .offer {
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+
+        .offer__text {
+            color: #ffffff;
+            font-weight: 700;
+
+            width: 100%;
+            padding: 2rem;
+        }
+
+            .offer__text-subtitle {
+                font-size: 1.3rem;
+            }
+            .offer__text-title {
+                font-size: 3rem;
+            }
+
+        .offer__button {
+            width: 100%;
+        }
+            .offer__button-btn {
+                float: right;
+
+                text-decoration: none;
+                outline: none;
+                cursor: pointer;
+                font-weight: 700;
+
+                padding: 1rem 4rem;
+
+                background-color: #05092F;
+                color: white;
+            }
