@@ -20,6 +20,12 @@ a.menu__items-item {
 a.menu__items-item:hover {
     color: #E4CB94;
 }
+a.copyright__copy-lerrra,
+a.copyright__copy-design {
+    color: darkgray;
+    border-bottom: 1px solid darkgray;
+}
+
 
 /* Styles for header's child elements */
 .header {
@@ -943,4 +949,30 @@ a.menu__items-item:hover {
                     height: 3rem;
                 }
 
+    .copyright {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
 
+        padding: 2rem 0;
+    }
+        .copyright__copy {
+            font-size: 0.875rem;
+            color: darkgray;
+            margin-bottom: 0.5rem;
+        }
+        .copyright__logo {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+            .copyright__logo-img {
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: 0.5rem;
+            }
+            .copyright__logo-text {
+                font-size: 1.125rem;
+                font-weight: 700;
+                color: darkgray;
+            }
