@@ -837,6 +837,8 @@ a.menu__items-item:hover {
     .offer {
         max-width: 75rem;
         margin: 0 auto;
+        display: flex;
+        flex-flow: column;
     }
 
         .offer__text {
@@ -860,7 +862,6 @@ a.menu__items-item:hover {
         }
             .offer__button-btn {
                 float: right;
-
                 text-decoration: none;
                 outline: none;
                 cursor: pointer;
@@ -869,7 +870,7 @@ a.menu__items-item:hover {
                 padding: 1rem 4rem;
 
                 background-color: #05092F;
-                color: white;
+                color: #E4CB94;
             }
 
                 @media screen and (max-width: 768px){
@@ -884,4 +885,62 @@ a.menu__items-item:hover {
                     }
 
                 }
+
+.footer {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+
+    display: flex;
+    flex-flow: column;
+}
+
+    .links {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 2rem 0;
+
+        border-bottom: 1px solid darkgray;
+    }
+        .links__menu {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+            width: 75%;
+        }
+            .links__menu-group {
+                display: flex;
+                flex-flow: column;
+
+                margin-right: 2rem;
+            }
+                .links__menu-group-title {
+                    font-size: 0.875rem;
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                }
+                .links__menu-group-item {
+                    font-size: 0.875rem;
+                    color: darkgray;
+                    margin-bottom: 0.5rem;
+                }
+
+        .links__social {
+            display: flex;
+            flex-flow: column;
+
+            max-width: 15%;
+        }
+        .link__social-icons-group {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+                .links__social-icons-img {
+                    width: 3rem;
+                    height: 3rem;
+                }
+
 
