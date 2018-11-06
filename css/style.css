@@ -12,10 +12,12 @@ body {
 a {
     text-decoration: none;
     color: #000000;
+}
+a.menu__items-item {
     font-weight: 700;
 }
 
-a:hover {
+a.menu__items-item:hover {
     color: #E4CB94;
 }
 
@@ -882,3 +884,4 @@ a:hover {
                     }
 
                 }
+
