@@ -775,6 +775,7 @@ a:hover {
                     @media screen and (max-width: 768px){
                         .booking {
                             flex-flow: row wrap;
+                            padding-bottom: 4rem;
                         }
                         .booking__image {
                             width: 70%;
@@ -849,6 +850,7 @@ a:hover {
             }
             .offer__text-title {
                 font-size: 3rem;
+                line-height: 1.2;
             }
 
         .offer__button {
@@ -867,3 +869,16 @@ a:hover {
                 background-color: #05092F;
                 color: white;
             }
+
+                @media screen and (max-width: 768px){
+                    .offer__text-subtitle {
+                        font-size: 1rem;
+                    }
+                    .offer__text-title {
+                        font-size: 2rem;
+                    }
+                    .offer__button-btn {
+                        font-size: 0.875rem;
+                    }
+
+                }
